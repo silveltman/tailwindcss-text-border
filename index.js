@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin')
-const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette')
+const flattenColorPalette =
+  require('tailwindcss/lib/util/flattenColorPalette').default
 
 const textBorder = plugin(function ({ matchUtilities, theme, config }) {
   const textBorderWidth = `--tw${config('prefix')}-text-border-width`
