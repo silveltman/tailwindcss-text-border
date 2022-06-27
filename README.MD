@@ -35,4 +35,13 @@ The plugin uses the theme colors, so no limitations here.
 
 ### Example
 
-<h1 class="text-border text-border-red">Hello world</h1>
+`<h1 class="text-border text-border-red">Hello world</h1>`
+
+## Warning
+
+The plugin relies on the following function for getting the colors from the theme:
+`const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default`
+
+This can potentially lead to future problems. Check [this github repo](https://github.com/tailwindlabs/tailwindcss/discussions/8598) for more information.
+
+Tips on how to fix this are welcomed!
